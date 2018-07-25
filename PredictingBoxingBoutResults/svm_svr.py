@@ -5,9 +5,9 @@ import csv
 from sklearn import preprocessing, cross_validation, svm
 from sklearn.linear_model import LinearRegression
 
-#Just for the sake of implementing linear regression to this dataset, I will atempt to build a predictive model of the resulting score using the features given.
-#With linear regression, I thought the approriate prediction would be the competitiveness of the fight (how close the bout was) rather than a binary output such as win/loss.
-#Bouts ending in knockouts will be excluded from the dataset for this model. 
+#Just for the sake of implementing regression modeling for non binary predictions, I've implemented regression algorithms to predict the "closeness" of a bout. 
+#With regression, I thought this was a more approriate prediction to make rather than a binary output such as win/loss.
+#Bouts ending in knockouts will be initially excluded from the dataset for this model. 
 #The judges' scores will be used to represent competitiveness of the fight quantitatively. A zero represents a draw, a positive score is in favor of fighter A, and a negative score is in favor of fighter B.
 
 df = pd.read_csv('bouts_out_new.csv')
