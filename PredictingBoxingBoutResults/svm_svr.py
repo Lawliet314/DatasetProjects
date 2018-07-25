@@ -39,3 +39,9 @@ clf.fit(X_train, y_train)
 confidence = clf.score(X_test, y_test)
 print(confidence)
 
+#For comparission with linear regression model
+#clf = LinearRegression() 
+#clf.fit(X_train, y_train)
+#confidence = clf.score(X_test, y_test)
+#print(confidence)
+
